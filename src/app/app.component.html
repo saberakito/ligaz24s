@@ -1,0 +1,31 @@
+<app-navbar *ngIf="showHeader">
+        
+</app-navbar>
+<!-- <div *ngIf="showHeader"  class="{{class_checkShow}}" >
+    <div  class="container">
+        <div  class="header-area">
+            <div  class="logo_area"><img  src="assets/images/logo/logo.png?v=1.1"></div>
+             <div _ngcontent-jev-c0="" class="social_area">
+                <div _ngcontent-jev-c0="" class="line_icon">
+                    <img class="line_icon_" _ngcontent-jev-c0="" alt="" src="assets/images/content/line.png?v=1.1">
+                    <img  class="hvr-push hover" routerLink="/page/register" _ngcontent-jev-c0="" alt="" src="assets/images/content/register.png">
+                </div>
+            </div>
+        </div>
+        <div  class="area_login"></div>
+    </div>
+
+
+</div> -->
+<div class="content page">
+    <router-outlet></router-outlet>
+</div>
+
+<div class="m_footer col-xs-12">
+    <div class="col-xs-3" routerLink="/home"><img src="assets/images/footer/icon-home.png"></div>
+    <div class="col-xs-3" ><a href="http://line.me/ti/p/~@LG24S" target="_bank"><img src="assets/images/footer/icon-line.png"></a></div>
+    <div class="col-xs-3" routerLink="/promotion"><img src="assets/images/footer/icon_guide.png"></div>
+    <div class="col-xs-3" routerLink="/page/register" ><img src="assets/images/footer/icon_add.png"></div>
+</div>
+<app-footer *ngIf="showHeader"></app-footer>
+
